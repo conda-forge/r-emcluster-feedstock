@@ -1,4 +1,4 @@
-{% set version = '0.2-12' %}
+{% set version = "0.2-13" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/EMCluster_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/EMCluster/EMCluster_{{ version }}.tar.gz
-  sha256: c490a70847bc6292d37b9d816ea4bae52c4e2ab18603c5a72b94bacf2e12480f
+  sha256: 0e52c28f66ff21bce1ea264c33ff968f6cc4cdec93fdeffc2c6dbd7b97591f34
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -46,11 +46,9 @@ test:
 about:
   home: https://github.com/snoweye/EMCluster
   license: MPL 2.0 (Licence Publique Mozilla 2.0)
-  summary: EM algorithms and several efficient initialization methods for model-based clustering
-    of finite mixture Gaussian distribution with unstructured dispersion in both of
-    unsupervised and semi-supervised learning.
+  summary: EM algorithms and several efficient initialization methods for model-based clustering of finite mixture Gaussian distribution with unstructured dispersion in both of unsupervised and semi-supervised learning.
   license_family: OTHER
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
+  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE
 
 extra:
   recipe-maintainers:
