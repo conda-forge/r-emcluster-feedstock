@@ -3,7 +3,7 @@ About r-emcluster
 
 Home: https://github.com/snoweye/EMCluster
 
-Package license: MPL 2.0 (Licence Publique Mozilla 2.0)
+Package license: MPL-2.0-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-emcluster-feedstock/blob/master/LICENSE.txt)
 
