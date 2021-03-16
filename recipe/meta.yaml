@@ -45,10 +45,11 @@ test:
 
 about:
   home: https://github.com/snoweye/EMCluster
-  license: MPL 2.0 (Licence Publique Mozilla 2.0)
+  license: MPL-2.0-only
   summary: EM algorithms and several efficient initialization methods for model-based clustering of finite mixture Gaussian distribution with unstructured dispersion in both of unsupervised and semi-supervised learning.
   license_family: OTHER
-  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE
+  license_file:
+    - {{ environ["RECIPE_DIR"] }}/LICENSE
 
 extra:
   recipe-maintainers:
