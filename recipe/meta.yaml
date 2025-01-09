@@ -1,4 +1,4 @@
-{% set version = "0.2-16" %}
+{% set version = "0.2-17" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/EMCluster_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/EMCluster/EMCluster_{{ version }}.tar.gz
-  sha256: 7dffc69bf959a61a7b1add1d733c1aa61ca1433ba822ba8d062d1e33e2e1c2c3
+  sha256: 16044fc4731455233c5b8fddaff81706a160859bc7d90fd0d4deb239dc0d4a9c
 
 build:
   number: 0
